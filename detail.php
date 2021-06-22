@@ -186,9 +186,9 @@
                                           );
                                         $preference->notification_url="https://hookb.in/Pxx9RyDdVMSLaaWDQDNe";  
                                         $preference->save();
-
+                                        echo "<script>console.log('Debug Objects: " . $preference->id . "' );</script>";
                                     ?>
-                                    <script>console.log(<?php echo $preference->id; ?>);</script>
+                                   
                                     <div class="cho-container"></div>
                               </div>
                             </div>
