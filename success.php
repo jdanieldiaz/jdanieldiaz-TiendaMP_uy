@@ -80,10 +80,10 @@
                     <p>
                     
                     <?php 
-                        echo $_GET['payment_id'];
-                        echo $_GET['status'];
-                        echo $_GET['external_reference'];
-                        echo $_GET['merchant_order_id'];
+                        echo "payment_id: " . $_GET['payment_id']."<br>";
+                        echo "status: " . $_GET['status']."<br>";
+                        echo "external_reference: " . $_GET['external_reference']."<br>";
+                        echo "merchant_order_id: " . $_GET['merchant_order_id'];
                     ?>
                     
                     </p>
