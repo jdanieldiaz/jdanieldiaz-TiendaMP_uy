@@ -156,7 +156,8 @@
                                         $item->description="Dispositivo m vil de Tienda e-commerce";
                                         $item->quantity = $_POST['unit'];
                                         $item->unit_price = $_POST['price'];
-                                        $item->picture_url = $_POST['img'];
+                                        $filename = $_SERVER['HTTP_HOST']."/" ."assets/".basename($_POST['img']);
+                                        $item->picture_url = $filename;
                                         $payer = new MercadoPago\Payer();
                                         $payer->name = "Lalo Landa";
                                         $payer->email= "test_user_63274575@testuser.com";
