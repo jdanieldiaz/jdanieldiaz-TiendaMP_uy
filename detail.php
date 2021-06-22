@@ -191,7 +191,7 @@
                                         $preference->notification_url="https://hookb.in/Pxx9RyDdVMSLaaWDQDNe";  
                                         $preference->save();
                                         echo "<script>console.log('Debug Objects: " . $preference->id . "' );</script>";
-                                        echo "<script>console.log('Debug Objects: " . $_POST['img'] . "' );</script>";
+                                        echo "<script>console.log('Debug Objects: " . $filename . "' );</script>";
                                     ?>
                                    
                                     <div class="cho-container"></div>
