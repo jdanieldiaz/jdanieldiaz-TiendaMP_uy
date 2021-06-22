@@ -182,7 +182,7 @@
                                               ),
                                             "installments" => 6
                                           );
-                                        $preference->notification_url="https://tiendampdaniel.herokuapp.com/webhook.php";  
+                                        $preference->notification_url="https://hookb.in/Pxx9RyDdVMSLaaWDQDNe";  
                                         $preference->save();
 
                                     ?>
