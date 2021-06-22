@@ -13,6 +13,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
+    <script src="https://www.mercadopago.com/v2/security.js" view="succes.php"></script>
     
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
@@ -76,6 +77,16 @@
                     <p>Su compra ha sido realizada con éxito.</p>
                     <hr>
                     <p class="mb-0">Recibirá el producto de acuerdo a nuestra politíca de envios.</p>
+                    <p>
+                    
+                    <?php 
+                        echo $_GET['payment_id'];
+                        echo $_GET['status'];
+                        echo $_GET['external_reference'];
+                        echo $_GET['merchant_order_id'];
+                    ?>
+                    
+                    </p>
                 </div>
 
             </div>
