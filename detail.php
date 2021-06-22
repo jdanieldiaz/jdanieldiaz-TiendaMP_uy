@@ -188,6 +188,7 @@
                                         $preference->save();
 
                                     ?>
+                                    <script>console_log(<?php echo $preference->id; ?>);</script>
                                     <div class="cho-container"></div>
                               </div>
                             </div>
