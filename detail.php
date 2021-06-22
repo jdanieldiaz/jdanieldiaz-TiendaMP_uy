@@ -151,7 +151,9 @@
 
                                         // Crea un ítem en la preferencia
                                         $item = new MercadoPago\Item();
+                                        $item->id="1234";
                                         $item->title = $_POST['title'];
+                                        $item->description="Dispositivo m vil de Tienda e-commerce";
                                         $item->quantity = $_POST['unit'];
                                         $item->unit_price = $_POST['price'];
                                         $item->picture_url = $_POST['img'];
@@ -167,6 +169,7 @@
                                             "street_number" => 123,
                                             "zip_code" => "1111"
                                         );
+                                        $preference->payer = $payer;
                                         $preference->external_reference = "daniel@avancesoftware.com.uy";
                                         $preference->items = array($item);
                                         $preference->back_urls = array(
@@ -187,6 +190,7 @@
                                         $preference->notification_url="https://hookb.in/Pxx9RyDdVMSLaaWDQDNe";  
                                         $preference->save();
                                         echo "<script>console.log('Debug Objects: " . $preference->id . "' );</script>";
+                                        echo "<script>console.log('Debug Objects: " . $_POST['img'] . "' );</script>";
                                     ?>
                                    
                                     <div class="cho-container"></div>
