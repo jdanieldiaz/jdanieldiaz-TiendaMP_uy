@@ -153,20 +153,21 @@
                                         $item = new MercadoPago\Item();
                                         $item->id="1234";
                                         $item->title = $_POST['title'];
-                                        $item->description="Dispositivo m vil de Tienda e-commerce";
+                                        $item->description="Dispositivo móvil de Tienda e-commerce";
                                         $item->quantity = $_POST['unit'];
                                         $item->unit_price = $_POST['price'];
-                                        $filename = $_SERVER['HTTP_HOST']."/" ."assets/".basename($_POST['img']);
+                                        $filename = "https://" .$_SERVER['HTTP_HOST']."/" ."assets/".basename($_POST['img']);
                                         $item->picture_url = $filename;
                                         $payer = new MercadoPago\Payer();
-                                        $payer->name = "Lalo Landa";
+                                        $payer->name = "Lalo";
+                                        $payer->surname = "Landa";
                                         $payer->email= "test_user_63274575@testuser.com";
                                         $payer->phone = array(
                                             "area_code" =>"11",
                                             "number" => "22223333"
                                         );
                                         $payer->address = array(
-                                            "street_name" => "Calle",
+                                            "street_name" => "Falsa",
                                             "street_number" => 123,
                                             "zip_code" => "1111"
                                         );
